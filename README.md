@@ -46,27 +46,25 @@ Realase v1.0을 다운받아 .unitypackage 파일을 import 하여 사용하면�
 
 ### **1. AbilityController 컴포넌트 추가**
 Ability를 사용할 GameObject에 AbilityController 컴포넌트를 추가합니다. (해당 컴포넌트의 Abilities에 2번에서 생성한 Ability를 추가)  
-<img width="300" height="400" alt="Ability" src="https://github.com/user-attachments/assets/483d845b-93f9-4002-87b8-d4725568cdbd" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/483d845b-93f9-4002-87b8-d4725568cdbd" width="300"/> </p>
 
 
 ### **2. Ability 생성 및 컨트롤러에 추가**
 Ability를 생성하고, 생성된 Ability를 1번 내용의 Controller의 Abilities에 추가합니다.
-<img width="400" height="400" alt="createability" src="https://github.com/user-attachments/assets/c178523d-b9e2-4108-85a5-a94387feede0" /> <img width="200" height="400" alt="AbilitySO" src="https://github.com/user-attachments/assets/88b6c8df-5e49-4bf0-abac-dee718e873e5" />
- <img width="300" height="100" alt="addability" src="https://github.com/user-attachments/assets/2cf5fc3e-7d6c-4148-87cd-19a1252d9910" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/c178523d-b9e2-4108-85a5-a94387feede0" width="350"/> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/88b6c8df-5e49-4bf0-abac-dee718e873e5" width="250"/> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/2cf5fc3e-7d6c-4148-87cd-19a1252d9910" width="300"/> </p>
 
 
 
 ### **3. TargetSelector 만들기**
 TargetSelector.cs 를 상속하여 커스텀 TargetSelector 를 만든 후 Ability에 등록합니다. 
-<img width="400" height="300" alt="exampleTargetSelector" src="https://github.com/user-attachments/assets/b87e57ae-fdf8-404a-9c3f-a5cadf9d76fb" /> <img width="400" height="300" alt="CreateTarget" src="https://github.com/user-attachments/assets/6f4d4680-3da7-41b3-8bb7-b619821c209d" />
-<img width="200" height="100" alt="TargetSO" src="https://github.com/user-attachments/assets/94f31c12-56ff-4938-97e8-f09972b423c5" /> <img width="200" height="400" alt="Target_in_ability" src="https://github.com/user-attachments/assets/7f218971-80de-49f1-9715-268993b591df" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/b87e57ae-fdf8-404a-9c3f-a5cadf9d76fb" width="400"/> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/6f4d4680-3da7-41b3-8bb7-b619821c209d" width="400"/> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/94f31c12-56ff-4938-97e8-f09972b423c5" width="250"/> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/7f218971-80de-49f1-9715-268993b591df" width="250"/> </p>
 
 
 
 
 ### **4. Condition 만들기**
 Condition.cs 를 상속하여 커스텀 Condition 를 만든 후 Ability에 등록합니다.  
-<img width="400" height="100" alt="exampleCondition" src="https://github.com/user-attachments/assets/78a34e35-8cbe-4d48-bc9d-0c728d6074d4" /> <img width="400" height="300" alt="CreateCondition" src="https://github.com/user-attachments/assets/354b2b99-e13c-4cf2-a521-f07ef289abc4" /> <img width="200" height="150" alt="ConditionSO" src="https://github.com/user-attachments/assets/e93ff504-c692-42a5-9f2f-e3e4b35c4f23" /> <img width="200" height="340" alt="Condition_in_ABILITY" src="https://github.com/user-attachments/assets/aada426b-7872-42ff-aa68-8dd35ff82d3e" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/78a34e35-8cbe-4d48-bc9d-0c728d6074d4" width="400"/> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/354b2b99-e13c-4cf2-a521-f07ef289abc4" width="400"/> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/e93ff504-c692-42a5-9f2f-e3e4b35c4f23" width="250"/> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/aada426b-7872-42ff-aa68-8dd35ff82d3e" width="250"/> </p>
  
  
 
@@ -74,8 +72,7 @@ Condition.cs 를 상속하여 커스텀 Condition 를 만든 후 Ability에 등�
 
 ### **5. Effect 만들기**
 Effect.cs 를 상속하여 커스텀 Effect 를 만든 후 Ability에 등록합니다.  
-<img width="300" height="400" alt="EffectExample" src="https://github.com/user-attachments/assets/f20daac5-96c0-4abe-85c0-b3e93bc8307d" /> <img width="400" height="300" alt="CreateEffect" src="https://github.com/user-attachments/assets/96714d0b-5f45-48fe-b9d3-c2bc39de3523" /> 
-<img width="200" height="100" alt="EffectSO" src="https://github.com/user-attachments/assets/088c5caa-f0eb-4f91-b687-d55e1a38b2fd" /> <img width="200" height="300" alt="effect_in_ability" src="https://github.com/user-attachments/assets/4e671c12-217f-41bd-8faa-3a210d972968" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/f20daac5-96c0-4abe-85c0-b3e93bc8307d" width="300"/> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/96714d0b-5f45-48fe-b9d3-c2bc39de3523" width="400"/> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/088c5caa-f0eb-4f91-b687-d55e1a38b2fd" width="250"/> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/4e671c12-217f-41bd-8faa-3a210d972968" width="250"/> </p>
 
 
 
