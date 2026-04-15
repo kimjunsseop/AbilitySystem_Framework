@@ -90,8 +90,9 @@ PresentationEffect 또한 5번의 Effect와 같은 과정으로 만들어 Abilit
 
 ## 5. 사용 방법
 
-**- AbilityController는 Ability 시스템의 실행 진입점이며, 플레이어, AI 오브젝트 등 모든 Ability 사용 주체에 공통적으로 사용됩니다.**
-**- 실 사용 예시 코드**
+- **AbilityController는 Ability 시스템의 실행 진입점이며, 플레이어, AI 오브젝트 등 모든 Ability 사용 주체에 공통적으로 사용됩니다.**
+- **실 사용 예시 코드**
+   
 
 ---
 
