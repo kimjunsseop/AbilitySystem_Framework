@@ -91,9 +91,82 @@ PresentationEffect 또한 5번의 Effect와 같은 과정으로 만들어 Abilit
 ## 5. 사용 방법
 
 - **AbilityController는 Ability 시스템의 실행 진입점이며, 플레이어, AI 오브젝트 등 모든 Ability 사용 주체에 공통적으로 사용됩니다.**
+- **Ability 사용 시 AbilityController 객체의 TryUseAbility() 함수를 사용하면 됩니다.**
 - **실 사용 예시 코드**
-   
+<details>
+<summary>여기를 클릭해서 코드 보기(사용예시 1)</summary>
 
+```csharp
+public class PlayerAbilityInput : MonoBehaviour
+{
+    public AbilityController controller;
+    public Ability ability;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            // Player의 Input을 통해 ability 사용
+            controller.TryUseAbility(ability);
+        }
+    }
+}
+```
+</details>
+
+<details>
+<summary>여기를 클릭해서 코드 보기(사용예시 2)</summary>
+
+```csharp
+public class MonsterAI : MonoBehaviour
+{
+    public AbilityController controller;
+    public Ability attackAbility;
+
+    void Update()
+    {
+        if (CanAttack())
+        {
+            // AI의 공격 가능 상황에서 ability 사용
+            controller.TryUseAbility(attackAbility);
+        }
+    }
+
+    bool CanAttack()
+    {
+        // 거리, 쿨타임, 상태 등 판단
+        return true;
+    }
+}
+```
+</details>
+
+<details>
+<summary>여기를 클릭해서 코드 보기(사용예시 3)</summary>
+
+```csharp
+public class Turret : MonoBehaviour
+{
+    public AbilityController controller;
+    public Ability fireAbility;
+
+    public float interval = 2f;
+
+    private float timer;
+
+    void Update()
+    {
+        timer += Time.deltaTime;
+
+        if (timer >= interval)
+        {
+            controller.TryUseAbility(fireAbility);
+            timer = 0f;
+        }
+    }
+}
+```
+</details>
 ---
 
 ## 6. 주의 사항 :
