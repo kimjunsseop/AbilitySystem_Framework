@@ -156,6 +156,7 @@ public class Turret : MonoBehaviour
 
         if (timer >= interval)
         {
+            // 여기서 사용
             controller.TryUseAbility(fireAbility);
             timer = 0f;
         }
