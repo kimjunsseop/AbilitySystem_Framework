@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// 해당 내용은 예시를 위해 만들어진 Effect 입니다. VFX 예시 Effect입니다.
 [CreateAssetMenu(menuName = "AbilitySystem/Effects/VFXEffect")]
 public class VFXEffect : Effect
 {
@@ -29,3 +30,6 @@ public class VFXEffect : Effect
         }
     }
 }
+
+
+
